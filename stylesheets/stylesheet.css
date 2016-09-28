@@ -368,7 +368,11 @@ Full-Width Styles
   background: #212121;
 }
 
-
+#map {
+   width: 100%;
+   height: 400px;
+   background-color: red;
+}
 
 /*******************************************************************************
 Small Device Styles
