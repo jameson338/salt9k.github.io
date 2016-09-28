@@ -15,8 +15,8 @@ function initMap(){
 
 function calcRoute(){
         var request = {
-                origin: "Roselle, IL",
-                destination: "Dekalb, IL",
+                origin: 'Roselle, IL',
+                destination: 'Dekalb, IL',
                 travelMode: 'DRIVING'
                 //transitOptions: TransitOptions,
                 //drivingOptions: DrivingOptions,
