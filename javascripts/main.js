@@ -22,7 +22,7 @@ function calcRoute() {
     travelMode: 'DRIVING'
   };
   directionsService.route(request, function(result, status) {
-    if (status == 'OK') {
+    if (status === 'OK') {
       directionsDisplay.setDirections(result);
     }
   });
