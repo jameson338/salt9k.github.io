@@ -6,7 +6,7 @@ function initMap(){
   directionsDisplay = new google.maps.DirectionsRenderer();
   var chicago = new google.maps.LatLng(41.850033, -87.6500523);
   var mapOptions = {
-    zoom:8,
+    zoom:10,
     center: chicago
   }
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -15,7 +15,7 @@ function initMap(){
 
 function calcRoute(){
         var request = {
-                origin: "200 N Gary Ave Roselle, IL 60172",
+                origin: "Roselle, IL",
                 destination: "Dekalb, IL",
                 travelMode: DRIVING,
                 //transitOptions: TransitOptions,
