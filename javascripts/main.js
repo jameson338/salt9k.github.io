@@ -1,24 +1,17 @@
 var map;
-
-function initMap(){
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: roselle
-        });
-        var roselle = {lat: 41.986, lng: -88.122};
-        var dekalb = {lat: 41.929, lng: -88.750};
-      //  var marker = new google.maps.Marker({
-      //    position: roselle,
-      //    map: map
-      //  });
-      //  var marker2 = new google.maps.Marker({
-      //    position: dekalb,
-      //    map: map
-      //  });
-}
-
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
+
+function initMap(){
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var chicago = new google.maps.LatLng(41.850033, -87.6500523);
+  var mapOptions = {
+    zoom:8,
+    center: chicago
+  }
+  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  directionsDisplay.setMap(map);
+}
 
 function calcRoute(){
         var request = {
