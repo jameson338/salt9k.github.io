@@ -5,14 +5,14 @@ function initMap(){
           zoom: 10,
           center: roselle
         });
-        var marker = new google.maps.Marker({
-          position: roselle,
-          map: map
-        });
-        var marker2 = new google.maps.Marker({
-          position: dekalb,
-          map: map
-        });
+      //  var marker = new google.maps.Marker({
+      //    position: roselle,
+      //    map: map
+      //  });
+      //  var marker2 = new google.maps.Marker({
+      //    position: dekalb,
+      //    map: map
+      //  });
 }
 
 var directionsDisplay;
