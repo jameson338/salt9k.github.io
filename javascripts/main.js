@@ -1,10 +1,11 @@
+var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: roselle
+});
+
 function initMap(){
         var roselle = {lat: 41.986, lng: -88.122};
         var dekalb = {lat: 41.929, lng: -88.750};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: roselle
-        });
       //  var marker = new google.maps.Marker({
       //    position: roselle,
       //    map: map
@@ -17,7 +18,6 @@ function initMap(){
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
-var map;
 
 function calcRoute(){
         var request = {
