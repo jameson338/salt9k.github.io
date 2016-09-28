@@ -1,6 +1,6 @@
 function initMap(){
         var roselle = {lat: 41.986, lng: -88.122};
-        var elgin = {lat: 42.035, lng: -88.281};
+        var dekalb = {lat: 41.929, lng: -88.750};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
           center: roselle
@@ -10,7 +10,7 @@ function initMap(){
           map: map
         });
         var marker2 = new google.maps.Marker({
-          position: elgin,
+          position: dekalb,
           map: map
         });
 }
