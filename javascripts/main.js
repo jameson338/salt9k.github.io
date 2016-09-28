@@ -1,8 +1,8 @@
-var map;
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
+var map;
 
-function initMap(){
+function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
   var chicago = new google.maps.LatLng(41.850033, -87.6500523);
   var mapOptions = {
@@ -13,25 +13,17 @@ function initMap(){
   directionsDisplay.setMap(map);
 }
 
-function calcRoute(){
-        var request = {
-                origin: 'Roselle, IL',
-                destination: 'Dekalb, IL',
-                travelMode: 'DRIVING'
-                //transitOptions: TransitOptions,
-                //drivingOptions: DrivingOptions,
-                //unitSystem: UnitSystem,
-                //waypoints[]: DirectionsWaypoint,
-                //optimizeWaypoints: Boolean,
-                //provideRouteAlternatives: Boolean,
-                //avoidHighways: Boolean,
-                //avoidTolls: Boolean,
-                //region: String
-        };
-directionsService.route(request, function(result, status) {
+function calcRoute() {
+ // var start = document.getElementById('start').value;
+ // var end = document.getElementById('end').value;
+  var request = {
+    origin: 'roselle, il',
+    destination: 'dekalb, il',
+    travelMode: 'DRIVING'
+  };
+  directionsService.route(request, function(result, status) {
     if (status == 'OK') {
       directionsDisplay.setDirections(result);
     }
   });
-        
 }
